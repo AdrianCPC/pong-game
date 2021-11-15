@@ -43,22 +43,22 @@ const GAME = (function () {
     if (ball.offsetLeft >= width) {
       stop();
       Swal.fire({
-		position: 'center',
-		icon: 'success',
-		title: 'Player 1 gana, F5 para reinicar',
-		showConfirmButton: false,
-		timer: 5500
-	  })
+        position: "center",
+        icon: "success",
+        title: "Player 1 gana, F5 para reinicar",
+        showConfirmButton: true,
+        timer: 5500,
+      });
     }
     if (ball.offsetLeft <= 0) {
       stop();
-	  Swal.fire({
-		position: 'center',
-		icon: 'success',
-		title: 'Player 2 gana, F5 para reiniciar',
-		showConfirmButton: false,
-		timer: 5500
-	  })
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Player 2 gana, F5 para reiniciar",
+        showConfirmButton: true,
+        timer: 5500,
+      });
     }
   }
   //Logica when ball is going to move
